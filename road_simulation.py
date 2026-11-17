@@ -8,7 +8,7 @@ Run with:   python road_simulation.py or python3 road_simulation.py
 """
 
 SEGMENT_M = 100
-ZEBRA_WAIT = 15
+ZEBRA_WAIT = 5
 ACCELERATION = 5
 BRAKING = 20
 START_NAME = "ALU Rwanda"
@@ -164,15 +164,10 @@ def get_journey_summary(road_list):
 
 
 
+
 if __name__ == "__main__":
     import sys
     import transit_program
     transit_program.run(sys.modules[__name__])
 
-
-
-
-print(is_valid_sign("15"))
-print(is_valid_sign("60"))
-print(is_valid_sign("bus"))
-print(is_valid_sign(60))
+    
